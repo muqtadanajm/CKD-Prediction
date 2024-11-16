@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kidney Disease Prediction</title>
+</head>
+<body>
+    <h1>Kidney Disease Prediction</h1>
+    <form method="POST" action="/predict">
+        <label for="input_features">Enter the 24 features (comma separated):</label><br>
+        <input type="text" id="input_features" name="feature_1,feature_2,...,feature_24" required><br><br>
+        <input type="submit" value="Predict">
+    </form>
+    <h2>{{ prediction_text }}</h2>
+</body>
+</html>
